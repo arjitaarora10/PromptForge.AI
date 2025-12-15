@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="todo-app">
+        <h1>Todo List</h1>
+        <div class="input-section">
+            <input id="new-task-input" type="text" placeholder="What needs to be done?" autocomplete="off" />
+            <button id="add-task-btn">Add</button>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+        <div class="footer">
+            <div class="filters">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="active" class="filter-btn">Active</button>
+                <button data-filter="completed" class="filter-btn">Completed</button>
+            </div>
+            <button id="clear-completed-btn">Clear Completed</button>
+        </div>
+    </div>
+</body>
+</html>
